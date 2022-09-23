@@ -10,8 +10,8 @@ namespace Lesson5_HomeWork_ShotInTarget
         const int TARGET_HEIGHT = 452;
 
         Graphics graph;
-        int x0 = TARGET_WIDTH / 2;
-        int y0 = TARGET_HEIGHT / 2;
+        const int x0 = TARGET_WIDTH / 2;
+        const int y0 = TARGET_HEIGHT / 2;
 
         bool initTarget = false;
         int sumPoints = 0;
@@ -43,6 +43,12 @@ namespace Lesson5_HomeWork_ShotInTarget
             try
             {
                 radius = Convert.ToInt32(txtRadius.Text);
+                if (radius < 0 || radius > 20)
+                {
+	                MessageBox.Show("Incorrect radius");
+	                initTarget = false;
+	                return false;
+                }
             }
             catch (Exception)
             {
@@ -71,11 +77,19 @@ namespace Lesson5_HomeWork_ShotInTarget
 
         private int CalcPoints(int x, int y)
         {
-            int points = 0;
+	        int radius = Convert.ToInt32(txtRadius.Text);
             int a2 = (x - x0) * (x - x0);
             int b2 = (y - y0) * (y - y0);
             double gipotenuza = Math.Sqrt(a2 + b2);
-            return points;
+            for (int i = 1; i < 11; i++)
+            {
+	            if (gipotenuza <= radius * i)
+	            {
+		            return (11 - i);
+	            }
+
+            }
+	        return 0;
         }
         private void Shot()
         {
@@ -83,16 +97,31 @@ namespace Lesson5_HomeWork_ShotInTarget
             int x = rand.Next(TARGET_WIDTH);
             int y = rand.Next(TARGET_HEIGHT);
 
-            labelCurrentShot.Text = "(" + x + "," + y + ")";
+            labelCurrentShot.Text = "(" + (x - x0).ToString() + "," + (y0-y).ToString() + ")";
             Pen blackPen = new Pen(Color.Red, 3);
             graph.DrawEllipse(blackPen, x, y, 4, 4);
 
-
-            sumPoints += 5;
-            labelCurrentPoints.Text = "5";
+            int currentPoint = CalcPoints(x, y);
+            sumPoints += currentPoint;
+            if (currentPoint == 0)
+            {
+	            labelCurrentPoints.Text = "Молоко :)";
+            }
+            else
+            {
+	            labelCurrentPoints.Text = currentPoint.ToString();
+            }
             labelSumPoints.Text = sumPoints.ToString();
         }
 
-       
-    }
+		private void MainForm_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtRadius_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
