@@ -58,7 +58,9 @@ namespace Lesson5_HomeWork_ShotInTarget
             }
            
             graph.Clear(Color.White);
-            
+            graph.DrawLine(Pens.Black, x0 - 10 * radius - 30, y0, x0 + 10 * radius + 30, y0);
+            graph.DrawLine(Pens.Black, x0, y0 - 10 * radius - 30, x0, y0 + 10 * radius + 30);
+
             for (int i = 1; i < 11; i++)
                 graph.DrawEllipse(Pens.Black, x0 - radius * i, y0 - radius * i, radius * 2 * i, radius * 2 * i);
             initTarget = true;
