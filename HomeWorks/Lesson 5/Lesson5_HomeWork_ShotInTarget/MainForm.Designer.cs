@@ -60,7 +60,6 @@
 			this.txtRadius.TabIndex = 1;
 			this.txtRadius.Text = "20";
 			this.txtRadius.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.txtRadius.TextChanged += new System.EventHandler(this.txtRadius_TextChanged);
 			// 
 			// label1
 			// 
@@ -179,7 +178,6 @@
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Вразити мішень";
-			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
 			this.panelKeyboard.ResumeLayout(false);
 			this.panelKeyboard.PerformLayout();

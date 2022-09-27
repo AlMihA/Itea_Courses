@@ -6,10 +6,13 @@ namespace Lesson5_HomeWork_ShotInTarget
 {
     public partial class MainForm : Form
     {
+        //розмір поля зроюлено статичним, але можна обчислювати через висоту і ширину форми
         const int TARGET_WIDTH = 652;
         const int TARGET_HEIGHT = 452;
 
         Graphics graph;
+
+        //початкова точка(центр)
         const int x0 = TARGET_WIDTH / 2;
         const int y0 = TARGET_HEIGHT / 2;
 
@@ -21,6 +24,7 @@ namespace Lesson5_HomeWork_ShotInTarget
             InitializeComponent();
         }
         
+        //ініціалізація графіки и малювання цілі, якщо не була раніше намальована
         private void MainForm_Paint(object sender, PaintEventArgs e)
         {
             graph = CreateGraphics();
@@ -28,6 +32,7 @@ namespace Lesson5_HomeWork_ShotInTarget
                 DrawTarget();
         }
 
+        //натиснення кнопки "Нова мішень"
         private void buttonClear_Click(object sender, EventArgs e)
         {
             DrawTarget();
