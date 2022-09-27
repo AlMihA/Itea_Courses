@@ -6,7 +6,7 @@ namespace Lesson5_HomeWork_ShotInTarget
 {
     public partial class MainForm : Form
     {
-        //розмір поля зроюлено статичним, але можна обчислювати через висоту і ширину форми
+        //розмір поля зроблено статичним, але можна обчислювати через висоту і ширину форми
         const int TARGET_WIDTH = 652;
         const int TARGET_HEIGHT = 452;
 
@@ -24,7 +24,7 @@ namespace Lesson5_HomeWork_ShotInTarget
             InitializeComponent();
         }
         
-        //ініціалізація графіки ы малювання мішені, якщо не була раніше намальована
+        //ініціалізація графіки і малювання мішені, якщо не була раніше намальована
         private void MainForm_Paint(object sender, PaintEventArgs e)
         {
             graph = CreateGraphics();
