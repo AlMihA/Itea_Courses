@@ -24,7 +24,7 @@ namespace Lesson5_HomeWork_ShotInTarget
             InitializeComponent();
         }
         
-        //ініціалізація графіки и малювання цілі, якщо не була раніше намальована
+        //ініціалізація графіки ы малювання мішені, якщо не була раніше намальована
         private void MainForm_Paint(object sender, PaintEventArgs e)
         {
             graph = CreateGraphics();
@@ -38,7 +38,7 @@ namespace Lesson5_HomeWork_ShotInTarget
             DrawTarget();
         }
 
-        //малювання цілі
+        //малювання мішені
         private bool DrawTarget()
         {
             int radius = 0;
@@ -99,7 +99,7 @@ namespace Lesson5_HomeWork_ShotInTarget
             //якщо гіпотенуза прямокутного трикутника з кутами в центрі та координатами точки менше радіуса, то точка належить цьому колу
             double gipotenuza = Math.Sqrt(a2 + b2);
 
-            //перевірка всех 10ьох радіусів
+            //перевірка усіх 10ьох радіусів і повернення балів
             for (int i = 1; i < 11; i++)
             {
 	            if (gipotenuza <= radius * i)
