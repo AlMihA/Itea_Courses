@@ -116,14 +116,5 @@ namespace Lesson5_HomeWork_ShotInTarget
             labelSumPoints.Text = sumPoints.ToString();
         }
 
-		private void MainForm_Load(object sender, EventArgs e)
-		{
-
-		}
-
-		private void txtRadius_TextChanged(object sender, EventArgs e)
-		{
-
-		}
 	}
 }
