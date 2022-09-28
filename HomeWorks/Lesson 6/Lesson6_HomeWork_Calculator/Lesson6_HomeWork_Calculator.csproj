@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryCalc.cs" />
-    <Compile Include="DecimalCalc.cs" />
+    <Compile Include="BinaryDecimalHexCalc.cs" />
+    <Compile Include="Calculator.cs" />
     <Compile Include="General.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
