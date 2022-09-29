@@ -17,13 +17,13 @@ namespace Lesson6_Homework_Temperature
 					break;
 				case "F":
 				case "f":
-					Console.WriteLine("{0} C = {1}", Degrees, ConvertFahrenheitToCelcius(Degrees));
-					Console.WriteLine("{0} C = {1}", Degrees, ConvertFahrenheitToKelvin(Degrees));
+					Console.WriteLine("{0} F = {1}", Degrees, ConvertFahrenheitToCelcius(Degrees));
+					Console.WriteLine("{0} F = {1}", Degrees, ConvertFahrenheitToKelvin(Degrees));
 					break;
 				case "K":
 				case "k":
-					Console.WriteLine("{0} C = {1}", Degrees, ConvertKelvinToCelcius(Degrees));
-					Console.WriteLine("{0} C = {1}", Degrees, ConvertKelvinToFahrenheit(Degrees));
+					Console.WriteLine("{0} K = {1}", Degrees, ConvertKelvinToCelcius(Degrees));
+					Console.WriteLine("{0} K = {1}", Degrees, ConvertKelvinToFahrenheit(Degrees));
 					break;
 			}
 		}
