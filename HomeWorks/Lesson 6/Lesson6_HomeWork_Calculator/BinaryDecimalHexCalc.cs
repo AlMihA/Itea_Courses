@@ -13,7 +13,7 @@ namespace Lesson6_HomeWork_Calculator
 
 	            if (systemNumber == 10)
 	            {
-					decimal result = General.CalcValue(actionAndNumbers);
+					double result = General.CalcValue(actionAndNumbers);
 					Console.WriteLine("{0} {1} {2} = {3}", actionAndNumbers[1], actionAndNumbers[0], actionAndNumbers[2], result);
 				}
 	            else

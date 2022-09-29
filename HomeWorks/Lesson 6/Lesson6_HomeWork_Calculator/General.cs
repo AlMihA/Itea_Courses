@@ -30,11 +30,11 @@ namespace Lesson6_HomeWork_Calculator
 			return answer;
 		}
 
-		public static decimal CalcValue(string[] actionAndNumbers)
+		public static double CalcValue(string[] actionAndNumbers)
 		{
-			decimal result;
-			decimal a = Convert.ToDecimal(actionAndNumbers[1]);
-			decimal b = Convert.ToDecimal(actionAndNumbers[2]);
+			double result;
+			double a = Convert.ToDouble(actionAndNumbers[1]);
+			double b = Convert.ToDouble(actionAndNumbers[2]);
 			if (actionAndNumbers[0] == "+")
 			{
 				result = a + b;
@@ -104,7 +104,7 @@ namespace Lesson6_HomeWork_Calculator
 			switch (numberSystem)
 			{
 				case 10:
-					if (!decimal.TryParse(value, out decimal a))
+					if (!double.TryParse(value, out double a))
 					{
 						Console.WriteLine("Incorrect number");
 						return false;

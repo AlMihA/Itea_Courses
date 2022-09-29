@@ -25,7 +25,7 @@ namespace Lesson6_HomeWork_Calculator
 						BinaryDecimalHexCalc.StartCalc(16);
 						break;
 					default:
-						Console.WriteLine("Try again");
+						Console.WriteLine("Incorrect choose. Try again");
 						break;
 				}
 

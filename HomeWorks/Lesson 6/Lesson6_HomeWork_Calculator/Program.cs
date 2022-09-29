@@ -8,7 +8,5 @@ namespace Lesson6_HomeWork_Calculator
         {
             Calculator.Start();
         }
-
-        
     }
 }

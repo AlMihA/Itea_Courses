@@ -11,7 +11,7 @@ namespace Lesson2_HomeWork
                 Console.WriteLine("Enter value:");
                 string userValue = Console.ReadLine();
 
-                Console.WriteLine("Enter type of value(sbyte, bool, short, ushort, int, uint, long, ulong,float,double,decimal,string):");
+                Console.WriteLine("Enter type of value(sbyte, bool, short, ushort, int, uint, long, ulong,float,double,double,string):");
                 string userType = Console.ReadLine();
 
                       
