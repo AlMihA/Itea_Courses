@@ -33,7 +33,7 @@ namespace Lesson6_HomeWork_Calculator
 		public static double CalcValue(string[] actionAndNumbers)
 		{
 			double result;
-			double a = Convert.ToDouble(actionAndNumbers[1]);
+            double a = Convert.ToDouble(actionAndNumbers[1]);
 			double b = Convert.ToDouble(actionAndNumbers[2]);
 			if (actionAndNumbers[0] == "+")
 			{
@@ -55,26 +55,28 @@ namespace Lesson6_HomeWork_Calculator
 			return result;
 		}
 
-		public static long CalcValue(string[] actionAndNumbers, int systemNumber)
+		public static long[] CalcValue(string[] actionAndNumbers, int systemNumber)
 		{
-			long result;
+			long[] result = new long[2];
+			result[1] = 0;
 			long a = Convert.ToInt32(actionAndNumbers[1], systemNumber);
 			long b = Convert.ToInt32(actionAndNumbers[2], systemNumber);
 			if (actionAndNumbers[0] == "+")
 			{
-				result = a + b;
+				result[0] = a + b;
 			}
 			else if (actionAndNumbers[0] == "-")
 			{
-				result = a - b;
+				result[0] = a - b;
 			}
 			else if (actionAndNumbers[0] == "*")
 			{
-				result = a * b;
+				result[0] = a * b;
 			}
 			else
 			{
-				result = a / b;
+				result[0] = a / b;
+				result[1] = a % b;
 			}
 
 			return result;
