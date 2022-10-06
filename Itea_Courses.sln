@@ -51,7 +51,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson7", "Lesson7", "{7066
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7_HomeWork_Employees", "HomeWorks\Lesson 7\Lesson7_HomeWork_Employees\Lesson7_HomeWork_Employees.csproj", "{94B3CDE9-F76D-47B0-A419-D643E3D400F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7_HomeWork_Cars", "HomeWorks\Lesson 7\Lesson7_HomeWork_Cars\Lesson7_HomeWork_Cars.csproj", "{7B38146E-1DC2-4B75-84C1-BD285EF43A7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson7_HomeWork_Cars", "HomeWorks\Lesson 7\Lesson7_HomeWork_Cars\Lesson7_HomeWork_Cars.csproj", "{7B38146E-1DC2-4B75-84C1-BD285EF43A7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson8", "Lesson8", "{2AE320E8-0A93-4011-9917-0E671C76DC9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson8_HomeWork_Datetime", "HomeWorks\Lesson 8\Lesson8_HomeWork_Datetime\Lesson8_HomeWork_Datetime.csproj", "{3EFC59C8-E1EB-426F-B479-93E3867EDA94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +131,10 @@ Global
 		{7B38146E-1DC2-4B75-84C1-BD285EF43A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B38146E-1DC2-4B75-84C1-BD285EF43A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B38146E-1DC2-4B75-84C1-BD285EF43A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFC59C8-E1EB-426F-B479-93E3867EDA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFC59C8-E1EB-426F-B479-93E3867EDA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFC59C8-E1EB-426F-B479-93E3867EDA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFC59C8-E1EB-426F-B479-93E3867EDA94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +163,8 @@ Global
 		{70669933-5D87-41FA-A8AA-03F0CB197516} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
 		{94B3CDE9-F76D-47B0-A419-D643E3D400F9} = {70669933-5D87-41FA-A8AA-03F0CB197516}
 		{7B38146E-1DC2-4B75-84C1-BD285EF43A7E} = {70669933-5D87-41FA-A8AA-03F0CB197516}
+		{2AE320E8-0A93-4011-9917-0E671C76DC9C} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
+		{3EFC59C8-E1EB-426F-B479-93E3867EDA94} = {2AE320E8-0A93-4011-9917-0E671C76DC9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FC29AD5-13F1-40F4-B0AA-6C8997DCBD8F}
