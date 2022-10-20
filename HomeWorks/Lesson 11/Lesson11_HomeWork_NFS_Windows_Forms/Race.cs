@@ -47,8 +47,7 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
                     {
                         RaceDraw.DrawCrash(crashArray[i, 0], 800 - crashArray[i, 1]+20);
                     }
-                    SortPositions();
-                    ShowPositions();
+                    ResultOfRace();
                     System.Threading.Thread.Sleep(2000);
 
                     for (int i = 0; i < a; i++)
