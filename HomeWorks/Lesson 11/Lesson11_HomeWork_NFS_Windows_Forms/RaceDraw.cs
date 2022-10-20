@@ -1,4 +1,7 @@
 ﻿using System.Drawing;
+using System.IO;
+using System.Reflection;
+using Lesson11_HomeWork_NFS_Windows_Forms.Properties;
 
 namespace Lesson11_HomeWork_NFS_Windows_Forms
 {
@@ -43,7 +46,7 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 		}
 		public static void DrawCrash(int x, int y, int number)
 		{
-			Image newImage = Image.FromFile("D:\\Lessons\\Crash.jpg");
+			Image newImage = Properties.Resources.Crash;
 			graph.DrawImage(newImage, x, y);
 		}
 	}
