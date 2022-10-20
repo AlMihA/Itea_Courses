@@ -33,11 +33,13 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 						if (Array.IndexOf(_obstacleArray, car.GetDistance()) != -1)
 						{
 							int x = RaceDraw.RACE_WIDTH * (2 * car._number + 1) / ((CarsArray.Length + 1) * 2);
-							RaceDraw.DrawCrash(x, 800 - car.GetDistance()+5, car._number);
-							System.Threading.Thread.Sleep(1000);
-							//car.ShowPenalty();
-							car.SetPenalty();
+							RaceDraw.DrawCrash(x, 800 - car.GetDistance(), car._number);
 							DrawNewMove();
+							System.Threading.Thread.Sleep(2000);
+							//car.ShowPenalty();
+							
+							
+							car.SetPenalty();
 							showPos = true;
 						}
 					}

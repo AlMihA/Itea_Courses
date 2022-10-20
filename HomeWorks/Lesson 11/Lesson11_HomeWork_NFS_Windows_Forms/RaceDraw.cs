@@ -42,7 +42,7 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 
 			Pen pen = new Pen(Color.Green, 1);
 			graph.DrawRectangle(pen, x, y, sideA, sideB);
-			graph.DrawString(number.ToString(), new Font("Arial", 8, FontStyle.Bold), new SolidBrush(Color.DarkGreen), new PointF(x + 5, y + 5));
+			graph.DrawString(number.ToString(), new Font("Arial", 8, FontStyle.Bold), new SolidBrush(Color.DarkGreen), new PointF(x, y));
 		}
 		public static void DrawCrash(int x, int y, int number)
 		{
