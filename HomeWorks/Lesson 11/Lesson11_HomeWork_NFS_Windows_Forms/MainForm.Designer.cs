@@ -29,64 +29,51 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.buttonStart = new System.Windows.Forms.Button();
-			this.btnStart = new System.Windows.Forms.Button();
-			this.panel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// panel1
-			// 
-			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel1.Controls.Add(this.buttonStart);
-			this.panel1.Controls.Add(this.btnStart);
-			this.panel1.Location = new System.Drawing.Point(693, 26);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(301, 844);
-			this.panel1.TabIndex = 0;
-			// 
-			// buttonStart
-			// 
-			this.buttonStart.Location = new System.Drawing.Point(94, 740);
-			this.buttonStart.Name = "buttonStart";
-			this.buttonStart.Size = new System.Drawing.Size(124, 32);
-			this.buttonStart.TabIndex = 1;
-			this.buttonStart.Text = "Start";
-			this.buttonStart.UseVisualStyleBackColor = true;
-			this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
-			// 
-			// btnStart
-			// 
-			this.btnStart.Location = new System.Drawing.Point(94, 793);
-			this.btnStart.Name = "btnStart";
-			this.btnStart.Size = new System.Drawing.Size(124, 32);
-			this.btnStart.TabIndex = 0;
-			this.btnStart.Text = "New race";
-			this.btnStart.UseVisualStyleBackColor = true;
-			this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-			// 
-			// MainForm
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1020, 933);
-			this.Controls.Add(this.panel1);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "MainForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Need For Speed 2D version";
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
-			this.panel1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.btnStart = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(893, 843);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(217, 32);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "New race";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // buttonStart
+            // 
+            this.buttonStart.Location = new System.Drawing.Point(893, 805);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(217, 32);
+            this.buttonStart.TabIndex = 1;
+            this.buttonStart.Text = "Start";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1176, 933);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.buttonStart);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Need For Speed 2D version";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
+            this.ResumeLayout(false);
 
 		}
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button btnStart;
-		private System.Windows.Forms.Button buttonStart;
-	}
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button buttonStart;
+    }
 }
 

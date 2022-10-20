@@ -8,16 +8,19 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 		private int _speed = 11;
 		private int _distance = 0;
 		private int _time = 0;
-		public int _number;
+		private int _number;
 		private bool _finishRace = false;
-
-		public Cars(int number)
-		{
-			_number = number;
-		}
 		public int GetDistance()
 		{
 			return _distance;
+		}
+		public int GetNumber()
+		{
+			return _number;
+		}
+		public Cars(int number)
+		{
+			_number = number;
 		}
 		public Cars(string model, int speed, int number)
 		{
@@ -27,7 +30,7 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 		}
 		public string GetInfo()
 		{
-			return $"{_model}, speed: {_speed} m/s, current distance: {_distance}, time for race: {_time}";
+			return $"{_model}, number: {_number}, speed: {_speed}m/s, distance: {_distance}, time for race: {_time}";
 		}
 		public bool Drive(int maxDistance)
 		{
@@ -47,12 +50,6 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 		{
 			_distance += -5;
 		}
-		public void ShowPenalty()
-		{
-			Console.ForegroundColor = ConsoleColor.Red;
-			Console.WriteLine($"Car {_model} hit an obstacle {_distance}");
-			Console.ResetColor();
-		}
 		public int CompareTo(object obj)
 		{
 			if (obj is Cars car)
@@ -67,12 +64,6 @@ namespace Lesson11_HomeWork_NFS_Windows_Forms
 				}
 			}
 			else throw new ArgumentException("Incorrect value");
-		}
-		public void ClearResults()
-		{
-			_time = 0;
-			_distance = 0;
-			_finishRace = false;
 		}
 	}
 }
