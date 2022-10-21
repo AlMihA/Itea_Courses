@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32901.82
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSolution", "TestSolution\TestSolution.csproj", "{14915716-D98C-4CCF-9421-F110EE71B3F7}"
 EndProject
@@ -67,14 +67,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson10_HomeWork_Interface
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson11", "Lesson11", "{2D971FB9-AC39-4B9A-83B9-4D65A42DD41F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_HomeWork_NeedForSpeed", "HomeWorks\Lesson 11\Lesson11_HomeWork_NeedForSpeed\Lesson11_HomeWork_NeedForSpeed.csproj", "{EDC6ED8B-F597-4C07-9F61-56DA1D2B8189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson11_HomeWork_NeedForSpeed", "HomeWorks\Lesson 11\Lesson11_HomeWork_NeedForSpeed\Lesson11_HomeWork_NeedForSpeed.csproj", "{EDC6ED8B-F597-4C07-9F61-56DA1D2B8189}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{701B7D8D-62F5-451B-A589-87B6414956F8}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_HomeWork_NFS_Windows_Forms", "HomeWorks\Lesson 11\Lesson11_HomeWork_NFS_Windows_Forms\Lesson11_HomeWork_NFS_Windows_Forms.csproj", "{F094252B-032B-45D0-9D4C-BAAE388E0172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson11_HomeWork_NFS_Windows_Forms", "HomeWorks\Lesson 11\Lesson11_HomeWork_NFS_Windows_Forms\Lesson11_HomeWork_NFS_Windows_Forms.csproj", "{F094252B-032B-45D0-9D4C-BAAE388E0172}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson12", "Lesson12", "{9F75FCE2-F4B2-42B6-8127-936B6C742212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_HomeWork_TelephoneBook", "HomeWorks\Lesson 12\Lesson12_HomeWork_TelephoneBook\Lesson12_HomeWork_TelephoneBook.csproj", "{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -170,6 +174,10 @@ Global
 		{F094252B-032B-45D0-9D4C-BAAE388E0172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F094252B-032B-45D0-9D4C-BAAE388E0172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F094252B-032B-45D0-9D4C-BAAE388E0172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -207,6 +215,8 @@ Global
 		{2D971FB9-AC39-4B9A-83B9-4D65A42DD41F} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
 		{EDC6ED8B-F597-4C07-9F61-56DA1D2B8189} = {2D971FB9-AC39-4B9A-83B9-4D65A42DD41F}
 		{F094252B-032B-45D0-9D4C-BAAE388E0172} = {2D971FB9-AC39-4B9A-83B9-4D65A42DD41F}
+		{9F75FCE2-F4B2-42B6-8127-936B6C742212} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
+		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C} = {9F75FCE2-F4B2-42B6-8127-936B6C742212}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FC29AD5-13F1-40F4-B0AA-6C8997DCBD8F}
