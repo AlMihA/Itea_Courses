@@ -11,12 +11,12 @@ namespace Lesson11_HomeWork_NeedForSpeed
 		private int _time = 0;
 		private bool _finishRace = false;
 
-		public Cars()
-		{
-		}
 		public int GetDistance()
 		{
 			return _distance;
+		}
+		public Cars()
+		{
 		}
 		public Cars(string model, int speed)
 		{
