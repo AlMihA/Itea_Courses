@@ -36,7 +36,7 @@ namespace Lesson13_HomeWork_Exception
 					//успіх
 					success = true;
 				}
-				
+
 				//перевірка яке прийшло виключення
 				catch (CustomExсeption ex)
 				{
@@ -56,7 +56,9 @@ namespace Lesson13_HomeWork_Exception
 				catch (ArithmeticException ex)
 				{
 					Console.WriteLine(ex.Message);
-					Console.WriteLine("Enter number not equal 0");
+					Console.WriteLine(ex.GetType().Name == "OverflowException"
+						? "Enter correct numbers"
+						: "Enter number not equal 0");
 				}
 				//не змогли ідентифікувати помилку
 				catch (Exception ex)
