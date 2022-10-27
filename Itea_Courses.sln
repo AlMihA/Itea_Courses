@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32505.173
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSolution", "TestSolution\TestSolution.csproj", "{14915716-D98C-4CCF-9421-F110EE71B3F7}"
 EndProject
@@ -79,6 +79,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson12", "Lesson12", "{9F75FCE2-F4B2-42B6-8127-936B6C742212}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_HomeWork_TelephoneBook", "HomeWorks\Lesson 12\Lesson12_HomeWork_TelephoneBook\Lesson12_HomeWork_TelephoneBook.csproj", "{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson13", "Lesson13", "{2FB168C6-C9D0-457A-BF3B-96AD6C418F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson13_HomeWork_Exception", "HomeWorks\Lesson 13\Lesson13_HomeWork_Exception\Lesson13_HomeWork_Exception.csproj", "{A6A2A119-5FC9-4E99-9149-45782F823AC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -178,6 +182,10 @@ Global
 		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,6 +225,8 @@ Global
 		{F094252B-032B-45D0-9D4C-BAAE388E0172} = {2D971FB9-AC39-4B9A-83B9-4D65A42DD41F}
 		{9F75FCE2-F4B2-42B6-8127-936B6C742212} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
 		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C} = {9F75FCE2-F4B2-42B6-8127-936B6C742212}
+		{2FB168C6-C9D0-457A-BF3B-96AD6C418F48} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
+		{A6A2A119-5FC9-4E99-9149-45782F823AC3} = {2FB168C6-C9D0-457A-BF3B-96AD6C418F48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FC29AD5-13F1-40F4-B0AA-6C8997DCBD8F}
