@@ -4,7 +4,7 @@ namespace Lesson15_Homework_MusicBox
 {
 	public class CompactDisc
 	{
-		public ArrayList arrayList { get; set; }
-		public int Number { get; set; }
+		public ArrayList SongsList;
+		public int Number;
 	}
 }
