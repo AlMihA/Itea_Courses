@@ -9,10 +9,10 @@ namespace Lesson15_Homework_MusicBox
 
         private void InitCollection()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 2; i++)
             {
                 CompactDisc cd = new();
-                for (int j = 0; j < 15; j++)
+                for (int j = 0; j < 10; j++)
                 {
                     cd.SongsList.Add(new Song("Artist" + j, "Song" + i + j));
                 }
