@@ -47,7 +47,7 @@ namespace Lesson15_Homework_MusicBox
         public void Start()
         {
             InitCollection();
-            bool shomMenu = true;
+            bool showMenu = true;
             do
             {
 
@@ -182,13 +182,13 @@ namespace Lesson15_Homework_MusicBox
                         FindSongsByArtist(artist);
                         break;
                     case "8":
-                        shomMenu = false;
+                        showMenu = false;
                         break;
                     default:
                         Console.WriteLine("Invalid operation. Try again");
                         break;
                 }
-            } while (shomMenu);
+            } while (showMenu);
         }
 
 
