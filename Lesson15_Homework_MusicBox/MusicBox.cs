@@ -9,17 +9,24 @@ namespace Lesson15_Homework_MusicBox
 
 		private void InitCollection()
 		{
-
-
+			for (int i = 0; i < 10; i++)
+			{
+				CompactDisc cd = new(i);
+				for (int j = 0; j < 15; j++)
+				{
+					cd.SongsList.Add(new Song("Artist" + j, "Song" + j));
+				}
+				colCompactDiscs.Add(i, cd);
+			}
 		}
 
-	public void Start()
+		public void Start()
 		{
 			InitCollection();
 			Console.WriteLine("Choose operation:");
 		}
 
-		
-		
+
+
 	}
 }

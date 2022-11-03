@@ -6,7 +6,8 @@ namespace Lesson15_Homework_MusicBox
 	{
 		static void Main(string[] args)
 		{
-			
+			MusicBox musicBox = new();
+			musicBox.Start();
 		}
 	}
 }

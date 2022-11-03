@@ -6,5 +6,11 @@ namespace Lesson15_Homework_MusicBox
 	{
 		public ArrayList SongsList;
 		public int Number;
+
+		public CompactDisc(int number)
+		{
+			this.Number = number;
+			SongsList = new ArrayList();
+		}
 	}
 }
