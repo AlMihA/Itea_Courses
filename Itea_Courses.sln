@@ -82,7 +82,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_HomeWork_Telephone
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson13", "Lesson13", "{2FB168C6-C9D0-457A-BF3B-96AD6C418F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson13_HomeWork_Exception", "HomeWorks\Lesson 13\Lesson13_HomeWork_Exception\Lesson13_HomeWork_Exception.csproj", "{A6A2A119-5FC9-4E99-9149-45782F823AC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson13_HomeWork_Exception", "HomeWorks\Lesson 13\Lesson13_HomeWork_Exception\Lesson13_HomeWork_Exception.csproj", "{A6A2A119-5FC9-4E99-9149-45782F823AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson15", "Lesson15", "{9CA61174-30E2-4DDF-822C-1F0064A2ECD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson15_Homework_MusicBox", "Lesson15_Homework_MusicBox\Lesson15_Homework_MusicBox.csproj", "{3D00867A-B6EA-40DA-8963-B125D14D6F17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -186,6 +190,10 @@ Global
 		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A2A119-5FC9-4E99-9149-45782F823AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D00867A-B6EA-40DA-8963-B125D14D6F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D00867A-B6EA-40DA-8963-B125D14D6F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D00867A-B6EA-40DA-8963-B125D14D6F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D00867A-B6EA-40DA-8963-B125D14D6F17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -227,6 +235,8 @@ Global
 		{B9E1DE4C-CD5B-40DB-A98D-E80214B0041C} = {9F75FCE2-F4B2-42B6-8127-936B6C742212}
 		{2FB168C6-C9D0-457A-BF3B-96AD6C418F48} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
 		{A6A2A119-5FC9-4E99-9149-45782F823AC3} = {2FB168C6-C9D0-457A-BF3B-96AD6C418F48}
+		{9CA61174-30E2-4DDF-822C-1F0064A2ECD6} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
+		{3D00867A-B6EA-40DA-8963-B125D14D6F17} = {9CA61174-30E2-4DDF-822C-1F0064A2ECD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FC29AD5-13F1-40F4-B0AA-6C8997DCBD8F}

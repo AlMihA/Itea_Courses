@@ -21,10 +21,10 @@ namespace Lesson13_HomeWork_Exception
 				        Subtract(a, b);
 				        break;
 			        case "*":
-				        Multiplication(a, b);
+				        Multiplicate(a, b);
 				        break;
 			        default:
-				        Division(a, b);
+				        Divide(a, b);
 				        break;
 		        }
 	        }
@@ -39,12 +39,12 @@ namespace Lesson13_HomeWork_Exception
             Console.WriteLine("A - B = " + (Convert.ToDecimal(a) - Convert.ToDecimal(b)));
         }
 
-        public static void Multiplication(string a, string b)
+        public static void Multiplicate(string a, string b)
         {
             Console.WriteLine("A * B = " + (Convert.ToDecimal(a) * Convert.ToDecimal(b)));
         }
 
-        public static void Division(string a, string b)
+        public static void Divide(string a, string b)
         {
             Console.WriteLine("A / B = " + (Convert.ToDecimal(a) / Convert.ToDecimal(b)));
         }
