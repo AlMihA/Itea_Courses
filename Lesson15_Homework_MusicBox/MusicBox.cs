@@ -28,6 +28,22 @@ namespace Lesson15_Homework_MusicBox
                 currentCD.Value.ShowDisc();
             }
         }
+
+        public void FindSongsByArtist(string artist)
+        {
+            foreach (KeyValuePair<string, CompactDisc> currentCD in colCompactDiscs)
+            {
+                for (int i = 0; i < currentCD.Value.SongsList.Count; i++)
+                {
+                    Song song = (Song)currentCD.Value.SongsList[i];
+                    if (song.Artist == artist)
+                    {
+                        Console.WriteLine(currentCD.Key + " " + song.Artist+" "+song.Title);
+                    }
+                }
+
+            }
+        }
         public void Start()
         {
             InitCollection();
@@ -48,6 +64,7 @@ namespace Lesson15_Homework_MusicBox
 
                 string operation = Console.ReadLine();
                 string discName;
+                string artist;
                 switch (operation)
                 {
                     case "1":
@@ -96,7 +113,7 @@ namespace Lesson15_Homework_MusicBox
                         if (colCompactDiscs.ContainsKey(discName))
                         {
                             Console.WriteLine("Enter artist");
-                            string artist = Console.ReadLine();
+                            artist = Console.ReadLine();
                             if (!(artist == ""))
                             {
                                 Console.WriteLine("Enter title");
@@ -158,6 +175,11 @@ namespace Lesson15_Homework_MusicBox
                         {
                             Console.WriteLine("Wrong disc name");
                         }
+                        break;
+                    case "7":
+                        Console.WriteLine("Enter artist");
+                        artist = Console.ReadLine();
+                        FindSongsByArtist(artist);
                         break;
                     case "8":
                         shomMenu = false;
