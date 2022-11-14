@@ -20,7 +20,6 @@ namespace Lesson16_HomeWork_CarCollection
             Cars car = new("Tesla", "iiiii");
             Truck truck = new("Renault", "uuuuu");
 
-            //Generic class Drive
             Console.WriteLine("----------------------- GENERIC CLASS----------------------------");
             Drive<Vehicle> driveVehicle = new()
             {
