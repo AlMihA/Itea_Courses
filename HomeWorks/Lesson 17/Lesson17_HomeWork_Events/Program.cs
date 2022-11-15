@@ -7,19 +7,20 @@ namespace Lesson17_HomeWork_Events
     {
         static void Main(string[] args)
         {
-            ArrayList arrayCity = new ArrayList();
-            CityWithEvents city1 = new();
-            CityWithEvents city2 = new();
+            CityWithEvents city1 = new("City1");
+            CityWithEvents city2 = new("City2");
+            
+            ArrayListWithEvents arrayCityWithEvents = new ArrayListWithEvents();
 
-            arrayCity.Add(city1);
-            arrayCity.Add(city2);
+            arrayCityWithEvents.Add(city1);
+            arrayCityWithEvents.Add(city2);
 
-            Police police = new(arrayCity);
-            FireService fireService = new(arrayCity);
-            Ambulance ambulance = new(arrayCity);
+            Police police = new(arrayCityWithEvents);
+            FireService fireService = new(arrayCityWithEvents);
+            Ambulance ambulance = new(arrayCityWithEvents);
 
-            city1.CityName = "City1";
-            city2.CityName = "City2";
+            CityWithEvents city3 = new("City3");
+            police.listOfCity.Add(city3);
 
             Random random = new();
 
@@ -31,6 +32,9 @@ namespace Lesson17_HomeWork_Events
 
                 randomValue = random.Next(1, 100);
                 city2.GenerateIncident(randomValue);
+                
+                randomValue = random.Next(1, 100);
+                city3.GenerateIncident(randomValue);
                 Console.WriteLine();
             }
             Console.ReadLine();

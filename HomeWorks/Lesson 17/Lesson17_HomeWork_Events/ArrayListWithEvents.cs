@@ -19,7 +19,6 @@ namespace Lesson17_HomeWork_Events
             {
                 ArrayChanged(this, args);
             }
-
         }
         public override int Add(object value)
         {
