@@ -1,21 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace Lesson17_HomeWork_Events
 {
     public class Police
     {
-        public Police(CityWithEvents city)
+        public Police(ArrayList city)
         {
-            city.IncidentForPolice += new IncidentEventHandler(PoliceIncident);
+            foreach (CityWithEvents _city in city)
+            {
+                _city.IncidentForPolice += new IncidentEventHandler(PoliceIncident);
+            }
         }
 
         public void PoliceIncident(object sender, IncidentEventArgs e)
         {
-            Console.WriteLine("Police in " + e.CityName);
+            Console.WriteLine(e.CityName +":" + "\t" + "The Police received a call");
         }
+
+
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson17_HomeWork_Events
 {
@@ -64,8 +60,11 @@ namespace Lesson17_HomeWork_Events
 		        case < 66:
 			        OnHappenedFireService(eventArgs);
 			        break;
-		        default:
-			        OnHappenedAmbulance(eventArgs);
+                case < 90:
+                    OnHappenedAmbulance(eventArgs);
+                    break;
+                default:
+                    Console.WriteLine(cityName+": no incidents"); ;
 			        break;
 	        }
         }
