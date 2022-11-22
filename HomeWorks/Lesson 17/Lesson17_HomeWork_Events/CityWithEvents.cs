@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson17_HomeWork_Events
 {
@@ -17,12 +13,10 @@ namespace Lesson17_HomeWork_Events
 
         private IncidentEventArgs eventArgs = new IncidentEventArgs();
 
-        public string CityName
+        public CityWithEvents(string _cityName)
         {
-            get { return cityName; }
-            set { cityName = value; }
+            cityName = _cityName;
         }
-
         public virtual void OnHappenedPolice(IncidentEventArgs args, int needAmbulance)
         {
             if (null != IncidentForPolice)
@@ -34,7 +28,6 @@ namespace Lesson17_HomeWork_Events
                     IncidentForAmbulance(this, args);
                 }
             }
-
         }
         public virtual void OnHappenedFireService(IncidentEventArgs args)
         {
@@ -50,7 +43,6 @@ namespace Lesson17_HomeWork_Events
             {
                 IncidentForAmbulance(this, args);
             }
-
         }
         public void GenerateIncident(int randomValue)
         {
@@ -64,12 +56,14 @@ namespace Lesson17_HomeWork_Events
 		        case < 66:
 			        OnHappenedFireService(eventArgs);
 			        break;
-		        default:
-			        OnHappenedAmbulance(eventArgs);
+                case < 90:
+                    OnHappenedAmbulance(eventArgs);
+                    break;
+                default:
+                    Console.WriteLine(cityName+":" + "\t" + "no incidents"); 
 			        break;
 	        }
         }
-
     }
 }
 
