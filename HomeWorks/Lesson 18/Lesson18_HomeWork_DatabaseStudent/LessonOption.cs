@@ -16,6 +16,7 @@ namespace Lesson18_HomeWork
 			bool boolExit = false;
 			do
 			{
+				Console.WriteLine();
 				Console.WriteLine("Choose option:");
 				Console.WriteLine("1. Show all Lessons");
 				Console.WriteLine("2. Add Lesson");
@@ -53,7 +54,7 @@ namespace Lesson18_HomeWork
 			DataContext db = new DataContext(DbConnection.ConnectionString);
 
 			Table<Lessons> lessons = db.GetTable<Lessons>();
-
+			Console.WriteLine();
 			foreach (var lesson in lessons)
 			{
 				Console.WriteLine("{0} \t{1}", lesson.Id, lesson.Name);
@@ -99,7 +100,7 @@ namespace Lesson18_HomeWork
 			var result = from visit in visitLessons
 						 where visit.StudentId == StudentId
 						 select visit;
-
+			Console.WriteLine();
 			if (result.Count() == 0)
 			{
 				Console.WriteLine("No visits");

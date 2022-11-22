@@ -14,7 +14,6 @@ namespace Lesson18_HomeWork
 			if (_sqlConnection.State == ConnectionState.Closed)
 			{
 				_sqlConnection.Open();
-				Console.WriteLine("Success!");
 			}
 		}
 
