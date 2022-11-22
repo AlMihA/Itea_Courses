@@ -2,8 +2,8 @@
 
 namespace Lesson18_HomeWork
 {
-	[Table(Name = "Students")]
-	public class Students
+	[Table(Name = "Lessons")]
+	public class Lessons
 	{
 		[Column(IsPrimaryKey = true, IsDbGenerated = true)]
 		public int Id { get; set; }
