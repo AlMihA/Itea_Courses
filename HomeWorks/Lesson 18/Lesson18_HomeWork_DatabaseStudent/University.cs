@@ -13,6 +13,7 @@ namespace Lesson18_HomeWork
 			bool boolExit = false;
 			do
 			{
+				Console.WriteLine();
 				Console.WriteLine("Choose option:");
 				Console.WriteLine("1. Work with Students");
 				Console.WriteLine("2. Work with Books");

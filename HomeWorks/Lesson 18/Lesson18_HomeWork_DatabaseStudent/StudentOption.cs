@@ -16,6 +16,7 @@ namespace Lesson18_HomeWork
 			bool boolExit = false;
 			do
 			{
+				Console.WriteLine();
 				Console.WriteLine("Choose option:");
 				Console.WriteLine("1. Show all Students");
 				Console.WriteLine("2. Add Student");
@@ -49,7 +50,7 @@ namespace Lesson18_HomeWork
 			DataContext db = new DataContext(DbConnection.ConnectionString);
 
 			Table<Students> students = db.GetTable<Students>();
-
+			Console.WriteLine();
 			foreach (var student in students)
 			{
 				Console.WriteLine("{0} \t{1}", student.Id, student.Name);
