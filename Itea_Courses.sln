@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33103.184
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSolution", "TestSolution\TestSolution.csproj", "{14915716-D98C-4CCF-9421-F110EE71B3F7}"
 EndProject
@@ -99,6 +99,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson18", "Lesson18", "{8909F495-8D42-49EF-AB0C-D59E02BAA5DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson18_HomeWork", "HomeWorks\Lesson 18\Lesson18_HomeWork_DatabaseStudent\Lesson18_HomeWork.csproj", "{0915D2E0-6DEA-4220-AE31-76077F5BE772}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Civilization", "Civilization", "{6A980024-42BB-4D56-BB06-E2445E4CF515}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Civilizations", "HomeWorks\Civilization\Civilizations.csproj", "{3852C710-41D2-4BFD-8AF0-01CBB96F1ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -218,6 +222,10 @@ Global
 		{0915D2E0-6DEA-4220-AE31-76077F5BE772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0915D2E0-6DEA-4220-AE31-76077F5BE772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0915D2E0-6DEA-4220-AE31-76077F5BE772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3852C710-41D2-4BFD-8AF0-01CBB96F1ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3852C710-41D2-4BFD-8AF0-01CBB96F1ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3852C710-41D2-4BFD-8AF0-01CBB96F1ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3852C710-41D2-4BFD-8AF0-01CBB96F1ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -267,6 +275,8 @@ Global
 		{6E0DCC37-CE11-4F64-A57E-8A7B4C373F99} = {79101933-350B-4A65-BEA8-CC4CB77F4E8E}
 		{8909F495-8D42-49EF-AB0C-D59E02BAA5DD} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
 		{0915D2E0-6DEA-4220-AE31-76077F5BE772} = {8909F495-8D42-49EF-AB0C-D59E02BAA5DD}
+		{6A980024-42BB-4D56-BB06-E2445E4CF515} = {A9C8DC58-8E12-4E59-B6C0-2AFC7C66064A}
+		{3852C710-41D2-4BFD-8AF0-01CBB96F1ED0} = {6A980024-42BB-4D56-BB06-E2445E4CF515}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FC29AD5-13F1-40F4-B0AA-6C8997DCBD8F}
